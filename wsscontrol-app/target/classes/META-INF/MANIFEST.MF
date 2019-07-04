@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1562239290408
+Build-Jdk: 1.8.0_181
+Built-By: kjw
+Bundle-Description: ONOS OSGi bundle archetype
+Bundle-ManifestVersion: 2
+Bundle-Name: wsscontrol-app
+Bundle-SymbolicName: org.wsscontrol.app
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.wsscontrol.app;uses:="org.onosproject.core,org.onosp
+ roject.net,org.onosproject.net.device,org.onosproject.net.flow,org.onos
+ project.net.flowobjective";version="1.0.0"
+Import-Package: com.eclipsesource.json;version="[0.9,1)",org.onosproject
+ .core;version="[1.14,2)",org.onosproject.net;version="[1.14,2)",org.ono
+ sproject.net.device;version="[1.14,2)",org.onosproject.net.flow;version
+ ="[1.14,2)",org.onosproject.net.flow.criteria;version="[1.14,2)",org.on
+ osproject.net.flowobjective;version="[1.14,2)",org.slf4j;version="[1.7,
+ 2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.wsscontrol.app.AppComponent.xml
+Tool: Bnd-3.0.0.201509101326
